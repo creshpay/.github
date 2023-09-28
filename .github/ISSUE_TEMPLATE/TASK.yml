@@ -1,0 +1,25 @@
+name: "⚙️ Task"
+description: Unit task issue that should be linked to a tracked product feature/bug.
+#title: ""
+labels: [
+  "kind/task ⚙️",
+]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        :warning: This issue **MUST** be tracked in [Product Delivery](https://github.com/creshpay/.product-delivery/issues)
+
+        _In fact, you should probably create a feature/bug first there or add to an existing one instead of making a standalone one directly with this template._
+
+        ---
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Describe the task specific to this repository, main spec should live in the tracking product issue.
+      placeholder: Task details
+    validations:
+      required: true
